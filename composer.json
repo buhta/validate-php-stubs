@@ -1,0 +1,23 @@
+{
+  "name": "protoc-gen-validate/validate",
+  "type": "library",
+  "description": "PHP stubs for protoc-gen-validate",
+  "license": "Apache-2.0",
+  "require": {
+    "google/protobuf": "*"
+  },
+  "suggest": {
+    "ext-protobuf": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ProtocGenValidate\\Validate\\": "src/ProtocGenValidate/Validate/",
+      "GPBMetadata\\ProtocGenValidate\\Validate\\": "src/GPBMetadata/ProtocGenValidate/Validate/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-main": "1.0.x-dev"
+    }
+  }
+}
