@@ -21,7 +21,7 @@ class AnyRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool required = 1;</code>
      */
-    protected $required = false;
+    protected $required = null;
     /**
      * In specifies that this field's `type_url` must be equal to one of the
      * specified values.
@@ -54,7 +54,7 @@ class AnyRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -66,7 +66,17 @@ class AnyRules extends \Google\Protobuf\Internal\Message
      */
     public function getRequired()
     {
-        return $this->required;
+        return isset($this->required) ? $this->required : false;
+    }
+
+    public function hasRequired()
+    {
+        return isset($this->required);
+    }
+
+    public function clearRequired()
+    {
+        unset($this->required);
     }
 
     /**

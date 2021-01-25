@@ -20,7 +20,7 @@ class StringRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string const = 1;</code>
      */
-    protected $const = '';
+    protected $const = null;
     /**
      * Len specifies that this field must be the specified number of
      * characters (Unicode code points). Note that the number of
@@ -28,7 +28,7 @@ class StringRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint64 len = 19;</code>
      */
-    protected $len = 0;
+    protected $len = null;
     /**
      * MinLen specifies that this field must be the specified number of
      * characters (Unicode code points) at a minimum. Note that the number of
@@ -36,7 +36,7 @@ class StringRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint64 min_len = 2;</code>
      */
-    protected $min_len = 0;
+    protected $min_len = null;
     /**
      * MaxLen specifies that this field must be the specified number of
      * characters (Unicode code points) at a maximum. Note that the number of
@@ -44,28 +44,28 @@ class StringRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint64 max_len = 3;</code>
      */
-    protected $max_len = 0;
+    protected $max_len = null;
     /**
      * LenBytes specifies that this field must be the specified number of bytes
      * at a minimum
      *
      * Generated from protobuf field <code>uint64 len_bytes = 20;</code>
      */
-    protected $len_bytes = 0;
+    protected $len_bytes = null;
     /**
      * MinBytes specifies that this field must be the specified number of bytes
      * at a minimum
      *
      * Generated from protobuf field <code>uint64 min_bytes = 4;</code>
      */
-    protected $min_bytes = 0;
+    protected $min_bytes = null;
     /**
      * MaxBytes specifies that this field must be the specified number of bytes
      * at a maximum
      *
      * Generated from protobuf field <code>uint64 max_bytes = 5;</code>
      */
-    protected $max_bytes = 0;
+    protected $max_bytes = null;
     /**
      * Pattern specifes that this field must match against the specified
      * regular expression (RE2 syntax). The included expression should elide
@@ -73,35 +73,35 @@ class StringRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string pattern = 6;</code>
      */
-    protected $pattern = '';
+    protected $pattern = null;
     /**
      * Prefix specifies that this field must have the specified substring at
      * the beginning of the string.
      *
      * Generated from protobuf field <code>string prefix = 7;</code>
      */
-    protected $prefix = '';
+    protected $prefix = null;
     /**
      * Suffix specifies that this field must have the specified substring at
      * the end of the string.
      *
      * Generated from protobuf field <code>string suffix = 8;</code>
      */
-    protected $suffix = '';
+    protected $suffix = null;
     /**
      * Contains specifies that this field must have the specified substring
      * anywhere in the string.
      *
      * Generated from protobuf field <code>string contains = 9;</code>
      */
-    protected $contains = '';
+    protected $contains = null;
     /**
      * NotContains specifies that this field cannot have the specified substring
      * anywhere in the string.
      *
      * Generated from protobuf field <code>string not_contains = 23;</code>
      */
-    protected $not_contains = '';
+    protected $not_contains = null;
     /**
      * In specifies that this field must be equal to one of the specified
      * values
@@ -125,14 +125,14 @@ class StringRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool strict = 25;</code>
      */
-    protected $strict = false;
+    protected $strict = null;
     /**
      * IgnoreEmpty specifies that the validation rules of this field should be
      * evaluated only if the field is not empty
      *
      * Generated from protobuf field <code>bool ignore_empty = 26;</code>
      */
-    protected $ignore_empty = false;
+    protected $ignore_empty = null;
     protected $well_known;
 
     /**
@@ -228,7 +228,7 @@ class StringRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -240,7 +240,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getConst()
     {
-        return $this->const;
+        return isset($this->const) ? $this->const : '';
+    }
+
+    public function hasConst()
+    {
+        return isset($this->const);
+    }
+
+    public function clearConst()
+    {
+        unset($this->const);
     }
 
     /**
@@ -268,7 +278,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getLen()
     {
-        return $this->len;
+        return isset($this->len) ? $this->len : 0;
+    }
+
+    public function hasLen()
+    {
+        return isset($this->len);
+    }
+
+    public function clearLen()
+    {
+        unset($this->len);
     }
 
     /**
@@ -298,7 +318,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getMinLen()
     {
-        return $this->min_len;
+        return isset($this->min_len) ? $this->min_len : 0;
+    }
+
+    public function hasMinLen()
+    {
+        return isset($this->min_len);
+    }
+
+    public function clearMinLen()
+    {
+        unset($this->min_len);
     }
 
     /**
@@ -328,7 +358,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getMaxLen()
     {
-        return $this->max_len;
+        return isset($this->max_len) ? $this->max_len : 0;
+    }
+
+    public function hasMaxLen()
+    {
+        return isset($this->max_len);
+    }
+
+    public function clearMaxLen()
+    {
+        unset($this->max_len);
     }
 
     /**
@@ -357,7 +397,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getLenBytes()
     {
-        return $this->len_bytes;
+        return isset($this->len_bytes) ? $this->len_bytes : 0;
+    }
+
+    public function hasLenBytes()
+    {
+        return isset($this->len_bytes);
+    }
+
+    public function clearLenBytes()
+    {
+        unset($this->len_bytes);
     }
 
     /**
@@ -385,7 +435,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getMinBytes()
     {
-        return $this->min_bytes;
+        return isset($this->min_bytes) ? $this->min_bytes : 0;
+    }
+
+    public function hasMinBytes()
+    {
+        return isset($this->min_bytes);
+    }
+
+    public function clearMinBytes()
+    {
+        unset($this->min_bytes);
     }
 
     /**
@@ -413,7 +473,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getMaxBytes()
     {
-        return $this->max_bytes;
+        return isset($this->max_bytes) ? $this->max_bytes : 0;
+    }
+
+    public function hasMaxBytes()
+    {
+        return isset($this->max_bytes);
+    }
+
+    public function clearMaxBytes()
+    {
+        unset($this->max_bytes);
     }
 
     /**
@@ -442,7 +512,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getPattern()
     {
-        return $this->pattern;
+        return isset($this->pattern) ? $this->pattern : '';
+    }
+
+    public function hasPattern()
+    {
+        return isset($this->pattern);
+    }
+
+    public function clearPattern()
+    {
+        unset($this->pattern);
     }
 
     /**
@@ -471,7 +551,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getPrefix()
     {
-        return $this->prefix;
+        return isset($this->prefix) ? $this->prefix : '';
+    }
+
+    public function hasPrefix()
+    {
+        return isset($this->prefix);
+    }
+
+    public function clearPrefix()
+    {
+        unset($this->prefix);
     }
 
     /**
@@ -499,7 +589,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getSuffix()
     {
-        return $this->suffix;
+        return isset($this->suffix) ? $this->suffix : '';
+    }
+
+    public function hasSuffix()
+    {
+        return isset($this->suffix);
+    }
+
+    public function clearSuffix()
+    {
+        unset($this->suffix);
     }
 
     /**
@@ -527,7 +627,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getContains()
     {
-        return $this->contains;
+        return isset($this->contains) ? $this->contains : '';
+    }
+
+    public function hasContains()
+    {
+        return isset($this->contains);
+    }
+
+    public function clearContains()
+    {
+        unset($this->contains);
     }
 
     /**
@@ -555,7 +665,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getNotContains()
     {
-        return $this->not_contains;
+        return isset($this->not_contains) ? $this->not_contains : '';
+    }
+
+    public function hasNotContains()
+    {
+        return isset($this->not_contains);
+    }
+
+    public function clearNotContains()
+    {
+        unset($this->not_contains);
     }
 
     /**
@@ -972,7 +1092,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getStrict()
     {
-        return $this->strict;
+        return isset($this->strict) ? $this->strict : false;
+    }
+
+    public function hasStrict()
+    {
+        return isset($this->strict);
+    }
+
+    public function clearStrict()
+    {
+        unset($this->strict);
     }
 
     /**
@@ -1003,7 +1133,17 @@ class StringRules extends \Google\Protobuf\Internal\Message
      */
     public function getIgnoreEmpty()
     {
-        return $this->ignore_empty;
+        return isset($this->ignore_empty) ? $this->ignore_empty : false;
+    }
+
+    public function hasIgnoreEmpty()
+    {
+        return isset($this->ignore_empty);
+    }
+
+    public function clearIgnoreEmpty()
+    {
+        unset($this->ignore_empty);
     }
 
     /**

@@ -21,7 +21,7 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool required = 1;</code>
      */
-    protected $required = false;
+    protected $required = null;
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -102,7 +102,7 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -114,7 +114,17 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      */
     public function getRequired()
     {
-        return $this->required;
+        return isset($this->required) ? $this->required : false;
+    }
+
+    public function hasRequired()
+    {
+        return isset($this->required);
+    }
+
+    public function clearRequired()
+    {
+        unset($this->required);
     }
 
     /**

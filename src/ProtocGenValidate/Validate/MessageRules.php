@@ -22,13 +22,13 @@ class MessageRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool skip = 1;</code>
      */
-    protected $skip = false;
+    protected $skip = null;
     /**
      * Required specifies that this field must be set
      *
      * Generated from protobuf field <code>bool required = 2;</code>
      */
-    protected $required = false;
+    protected $required = null;
 
     /**
      * Constructor.
@@ -44,7 +44,7 @@ class MessageRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -57,7 +57,17 @@ class MessageRules extends \Google\Protobuf\Internal\Message
      */
     public function getSkip()
     {
-        return $this->skip;
+        return isset($this->skip) ? $this->skip : false;
+    }
+
+    public function hasSkip()
+    {
+        return isset($this->skip);
+    }
+
+    public function clearSkip()
+    {
+        unset($this->skip);
     }
 
     /**
@@ -84,7 +94,17 @@ class MessageRules extends \Google\Protobuf\Internal\Message
      */
     public function getRequired()
     {
-        return $this->required;
+        return isset($this->required) ? $this->required : false;
+    }
+
+    public function hasRequired()
+    {
+        return isset($this->required);
+    }
+
+    public function clearRequired()
+    {
+        unset($this->required);
     }
 
     /**

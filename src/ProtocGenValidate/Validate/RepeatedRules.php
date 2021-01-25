@@ -21,14 +21,14 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint64 min_items = 1;</code>
      */
-    protected $min_items = 0;
+    protected $min_items = null;
     /**
      * MaxItems specifies that this field must have the specified number of
      * items at a maximum
      *
      * Generated from protobuf field <code>uint64 max_items = 2;</code>
      */
-    protected $max_items = 0;
+    protected $max_items = null;
     /**
      * Unique specifies that all elements in this field must be unique. This
      * contraint is only applicable to scalar and enum types (messages are not
@@ -36,7 +36,7 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool unique = 3;</code>
      */
-    protected $unique = false;
+    protected $unique = null;
     /**
      * Items specifies the contraints to be applied to each item in the field.
      * Repeated message fields will still execute validation against each item
@@ -51,7 +51,7 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool ignore_empty = 5;</code>
      */
-    protected $ignore_empty = false;
+    protected $ignore_empty = null;
 
     /**
      * Constructor.
@@ -79,7 +79,7 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -92,7 +92,17 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      */
     public function getMinItems()
     {
-        return $this->min_items;
+        return isset($this->min_items) ? $this->min_items : 0;
+    }
+
+    public function hasMinItems()
+    {
+        return isset($this->min_items);
+    }
+
+    public function clearMinItems()
+    {
+        unset($this->min_items);
     }
 
     /**
@@ -120,7 +130,17 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      */
     public function getMaxItems()
     {
-        return $this->max_items;
+        return isset($this->max_items) ? $this->max_items : 0;
+    }
+
+    public function hasMaxItems()
+    {
+        return isset($this->max_items);
+    }
+
+    public function clearMaxItems()
+    {
+        unset($this->max_items);
     }
 
     /**
@@ -149,7 +169,17 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      */
     public function getUnique()
     {
-        return $this->unique;
+        return isset($this->unique) ? $this->unique : false;
+    }
+
+    public function hasUnique()
+    {
+        return isset($this->unique);
+    }
+
+    public function clearUnique()
+    {
+        unset($this->unique);
     }
 
     /**
@@ -218,7 +248,17 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      */
     public function getIgnoreEmpty()
     {
-        return $this->ignore_empty;
+        return isset($this->ignore_empty) ? $this->ignore_empty : false;
+    }
+
+    public function hasIgnoreEmpty()
+    {
+        return isset($this->ignore_empty);
+    }
+
+    public function clearIgnoreEmpty()
+    {
+        unset($this->ignore_empty);
     }
 
     /**

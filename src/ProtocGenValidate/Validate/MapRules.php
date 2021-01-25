@@ -21,21 +21,21 @@ class MapRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint64 min_pairs = 1;</code>
      */
-    protected $min_pairs = 0;
+    protected $min_pairs = null;
     /**
      * MaxPairs specifies that this field must have the specified number of
      * KVs at a maximum
      *
      * Generated from protobuf field <code>uint64 max_pairs = 2;</code>
      */
-    protected $max_pairs = 0;
+    protected $max_pairs = null;
     /**
      * NoSparse specifies values in this field cannot be unset. This only
      * applies to map's with message value types.
      *
      * Generated from protobuf field <code>bool no_sparse = 3;</code>
      */
-    protected $no_sparse = false;
+    protected $no_sparse = null;
     /**
      * Keys specifies the constraints to be applied to each key in the field.
      *
@@ -56,7 +56,7 @@ class MapRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool ignore_empty = 6;</code>
      */
-    protected $ignore_empty = false;
+    protected $ignore_empty = null;
 
     /**
      * Constructor.
@@ -85,7 +85,7 @@ class MapRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -98,7 +98,17 @@ class MapRules extends \Google\Protobuf\Internal\Message
      */
     public function getMinPairs()
     {
-        return $this->min_pairs;
+        return isset($this->min_pairs) ? $this->min_pairs : 0;
+    }
+
+    public function hasMinPairs()
+    {
+        return isset($this->min_pairs);
+    }
+
+    public function clearMinPairs()
+    {
+        unset($this->min_pairs);
     }
 
     /**
@@ -126,7 +136,17 @@ class MapRules extends \Google\Protobuf\Internal\Message
      */
     public function getMaxPairs()
     {
-        return $this->max_pairs;
+        return isset($this->max_pairs) ? $this->max_pairs : 0;
+    }
+
+    public function hasMaxPairs()
+    {
+        return isset($this->max_pairs);
+    }
+
+    public function clearMaxPairs()
+    {
+        unset($this->max_pairs);
     }
 
     /**
@@ -154,7 +174,17 @@ class MapRules extends \Google\Protobuf\Internal\Message
      */
     public function getNoSparse()
     {
-        return $this->no_sparse;
+        return isset($this->no_sparse) ? $this->no_sparse : false;
+    }
+
+    public function hasNoSparse()
+    {
+        return isset($this->no_sparse);
+    }
+
+    public function clearNoSparse()
+    {
+        unset($this->no_sparse);
     }
 
     /**
@@ -258,7 +288,17 @@ class MapRules extends \Google\Protobuf\Internal\Message
      */
     public function getIgnoreEmpty()
     {
-        return $this->ignore_empty;
+        return isset($this->ignore_empty) ? $this->ignore_empty : false;
+    }
+
+    public function hasIgnoreEmpty()
+    {
+        return isset($this->ignore_empty);
+    }
+
+    public function clearIgnoreEmpty()
+    {
+        unset($this->ignore_empty);
     }
 
     /**

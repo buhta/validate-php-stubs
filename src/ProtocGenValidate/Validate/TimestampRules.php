@@ -21,7 +21,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool required = 1;</code>
      */
-    protected $required = false;
+    protected $required = null;
     /**
      * Const specifies that this field must be exactly the specified value
      *
@@ -62,14 +62,14 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool lt_now = 7;</code>
      */
-    protected $lt_now = false;
+    protected $lt_now = null;
     /**
      * GtNow specifies that this must be greater than the current time. GtNow
      * can only be used with the Within rule.
      *
      * Generated from protobuf field <code>bool gt_now = 8;</code>
      */
-    protected $gt_now = false;
+    protected $gt_now = null;
     /**
      * Within specifies that this field must be within this duration of the
      * current time. This constraint can be used alone or with the LtNow and
@@ -114,7 +114,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -126,7 +126,17 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      */
     public function getRequired()
     {
-        return $this->required;
+        return isset($this->required) ? $this->required : false;
+    }
+
+    public function hasRequired()
+    {
+        return isset($this->required);
+    }
+
+    public function clearRequired()
+    {
+        unset($this->required);
     }
 
     /**
@@ -341,7 +351,17 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      */
     public function getLtNow()
     {
-        return $this->lt_now;
+        return isset($this->lt_now) ? $this->lt_now : false;
+    }
+
+    public function hasLtNow()
+    {
+        return isset($this->lt_now);
+    }
+
+    public function clearLtNow()
+    {
+        unset($this->lt_now);
     }
 
     /**
@@ -369,7 +389,17 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      */
     public function getGtNow()
     {
-        return $this->gt_now;
+        return isset($this->gt_now) ? $this->gt_now : false;
+    }
+
+    public function hasGtNow()
+    {
+        return isset($this->gt_now);
+    }
+
+    public function clearGtNow()
+    {
+        unset($this->gt_now);
     }
 
     /**

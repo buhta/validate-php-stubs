@@ -20,14 +20,14 @@ class EnumRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>int32 const = 1;</code>
      */
-    protected $const = 0;
+    protected $const = null;
     /**
      * DefinedOnly specifies that this field must be only one of the defined
      * values for this enum, failing on any undefined value.
      *
      * Generated from protobuf field <code>bool defined_only = 2;</code>
      */
-    protected $defined_only = false;
+    protected $defined_only = null;
     /**
      * In specifies that this field must be equal to one of the specified
      * values
@@ -63,7 +63,7 @@ class EnumRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -75,7 +75,17 @@ class EnumRules extends \Google\Protobuf\Internal\Message
      */
     public function getConst()
     {
-        return $this->const;
+        return isset($this->const) ? $this->const : 0;
+    }
+
+    public function hasConst()
+    {
+        return isset($this->const);
+    }
+
+    public function clearConst()
+    {
+        unset($this->const);
     }
 
     /**
@@ -102,7 +112,17 @@ class EnumRules extends \Google\Protobuf\Internal\Message
      */
     public function getDefinedOnly()
     {
-        return $this->defined_only;
+        return isset($this->defined_only) ? $this->defined_only : false;
+    }
+
+    public function hasDefinedOnly()
+    {
+        return isset($this->defined_only);
+    }
+
+    public function clearDefinedOnly()
+    {
+        unset($this->defined_only);
     }
 
     /**

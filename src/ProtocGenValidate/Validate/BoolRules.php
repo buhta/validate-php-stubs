@@ -20,7 +20,7 @@ class BoolRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool const = 1;</code>
      */
-    protected $const = false;
+    protected $const = null;
 
     /**
      * Constructor.
@@ -33,7 +33,7 @@ class BoolRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -45,7 +45,17 @@ class BoolRules extends \Google\Protobuf\Internal\Message
      */
     public function getConst()
     {
-        return $this->const;
+        return isset($this->const) ? $this->const : false;
+    }
+
+    public function hasConst()
+    {
+        return isset($this->const);
+    }
+
+    public function clearConst()
+    {
+        unset($this->const);
     }
 
     /**

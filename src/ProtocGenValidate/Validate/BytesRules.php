@@ -20,27 +20,27 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bytes const = 1;</code>
      */
-    protected $const = '';
+    protected $const = null;
     /**
      * Len specifies that this field must be the specified number of bytes
      *
      * Generated from protobuf field <code>uint64 len = 13;</code>
      */
-    protected $len = 0;
+    protected $len = null;
     /**
      * MinLen specifies that this field must be the specified number of bytes
      * at a minimum
      *
      * Generated from protobuf field <code>uint64 min_len = 2;</code>
      */
-    protected $min_len = 0;
+    protected $min_len = null;
     /**
      * MaxLen specifies that this field must be the specified number of bytes
      * at a maximum
      *
      * Generated from protobuf field <code>uint64 max_len = 3;</code>
      */
-    protected $max_len = 0;
+    protected $max_len = null;
     /**
      * Pattern specifes that this field must match against the specified
      * regular expression (RE2 syntax). The included expression should elide
@@ -48,28 +48,28 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>string pattern = 4;</code>
      */
-    protected $pattern = '';
+    protected $pattern = null;
     /**
      * Prefix specifies that this field must have the specified bytes at the
      * beginning of the string.
      *
      * Generated from protobuf field <code>bytes prefix = 5;</code>
      */
-    protected $prefix = '';
+    protected $prefix = null;
     /**
      * Suffix specifies that this field must have the specified bytes at the
      * end of the string.
      *
      * Generated from protobuf field <code>bytes suffix = 6;</code>
      */
-    protected $suffix = '';
+    protected $suffix = null;
     /**
      * Contains specifies that this field must have the specified bytes
      * anywhere in the string.
      *
      * Generated from protobuf field <code>bytes contains = 7;</code>
      */
-    protected $contains = '';
+    protected $contains = null;
     /**
      * In specifies that this field must be equal to one of the specified
      * values
@@ -90,7 +90,7 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool ignore_empty = 14;</code>
      */
-    protected $ignore_empty = false;
+    protected $ignore_empty = null;
     protected $well_known;
 
     /**
@@ -143,7 +143,7 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -155,7 +155,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getConst()
     {
-        return $this->const;
+        return isset($this->const) ? $this->const : '';
+    }
+
+    public function hasConst()
+    {
+        return isset($this->const);
+    }
+
+    public function clearConst()
+    {
+        unset($this->const);
     }
 
     /**
@@ -181,7 +191,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getLen()
     {
-        return $this->len;
+        return isset($this->len) ? $this->len : 0;
+    }
+
+    public function hasLen()
+    {
+        return isset($this->len);
+    }
+
+    public function clearLen()
+    {
+        unset($this->len);
     }
 
     /**
@@ -208,7 +228,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getMinLen()
     {
-        return $this->min_len;
+        return isset($this->min_len) ? $this->min_len : 0;
+    }
+
+    public function hasMinLen()
+    {
+        return isset($this->min_len);
+    }
+
+    public function clearMinLen()
+    {
+        unset($this->min_len);
     }
 
     /**
@@ -236,7 +266,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getMaxLen()
     {
-        return $this->max_len;
+        return isset($this->max_len) ? $this->max_len : 0;
+    }
+
+    public function hasMaxLen()
+    {
+        return isset($this->max_len);
+    }
+
+    public function clearMaxLen()
+    {
+        unset($this->max_len);
     }
 
     /**
@@ -265,7 +305,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getPattern()
     {
-        return $this->pattern;
+        return isset($this->pattern) ? $this->pattern : '';
+    }
+
+    public function hasPattern()
+    {
+        return isset($this->pattern);
+    }
+
+    public function clearPattern()
+    {
+        unset($this->pattern);
     }
 
     /**
@@ -294,7 +344,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getPrefix()
     {
-        return $this->prefix;
+        return isset($this->prefix) ? $this->prefix : '';
+    }
+
+    public function hasPrefix()
+    {
+        return isset($this->prefix);
+    }
+
+    public function clearPrefix()
+    {
+        unset($this->prefix);
     }
 
     /**
@@ -322,7 +382,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getSuffix()
     {
-        return $this->suffix;
+        return isset($this->suffix) ? $this->suffix : '';
+    }
+
+    public function hasSuffix()
+    {
+        return isset($this->suffix);
+    }
+
+    public function clearSuffix()
+    {
+        unset($this->suffix);
     }
 
     /**
@@ -350,7 +420,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getContains()
     {
-        return $this->contains;
+        return isset($this->contains) ? $this->contains : '';
+    }
+
+    public function hasContains()
+    {
+        return isset($this->contains);
+    }
+
+    public function clearContains()
+    {
+        unset($this->contains);
     }
 
     /**
@@ -533,7 +613,17 @@ class BytesRules extends \Google\Protobuf\Internal\Message
      */
     public function getIgnoreEmpty()
     {
-        return $this->ignore_empty;
+        return isset($this->ignore_empty) ? $this->ignore_empty : false;
+    }
+
+    public function hasIgnoreEmpty()
+    {
+        return isset($this->ignore_empty);
+    }
+
+    public function clearIgnoreEmpty()
+    {
+        unset($this->ignore_empty);
     }
 
     /**

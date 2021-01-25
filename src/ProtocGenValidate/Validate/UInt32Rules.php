@@ -20,21 +20,21 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint32 const = 1;</code>
      */
-    protected $const = 0;
+    protected $const = null;
     /**
      * Lt specifies that this field must be less than the specified value,
      * exclusive
      *
      * Generated from protobuf field <code>uint32 lt = 2;</code>
      */
-    protected $lt = 0;
+    protected $lt = null;
     /**
      * Lte specifies that this field must be less than or equal to the
      * specified value, inclusive
      *
      * Generated from protobuf field <code>uint32 lte = 3;</code>
      */
-    protected $lte = 0;
+    protected $lte = null;
     /**
      * Gt specifies that this field must be greater than the specified value,
      * exclusive. If the value of Gt is larger than a specified Lt or Lte, the
@@ -42,7 +42,7 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint32 gt = 4;</code>
      */
-    protected $gt = 0;
+    protected $gt = null;
     /**
      * Gte specifies that this field must be greater than or equal to the
      * specified value, inclusive. If the value of Gte is larger than a
@@ -50,7 +50,7 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>uint32 gte = 5;</code>
      */
-    protected $gte = 0;
+    protected $gte = null;
     /**
      * In specifies that this field must be equal to one of the specified
      * values
@@ -71,7 +71,7 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      *
      * Generated from protobuf field <code>bool ignore_empty = 8;</code>
      */
-    protected $ignore_empty = false;
+    protected $ignore_empty = null;
 
     /**
      * Constructor.
@@ -107,7 +107,7 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      * }
      */
     public function __construct($data = NULL) {
-        \GPBMetadata\ProtocGenValidate\GPBValidate\Validate::initOnce();
+        \GPBMetadata\ProtocGenValidate\Validate\Validate::initOnce();
         parent::__construct($data);
     }
 
@@ -119,7 +119,17 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      */
     public function getConst()
     {
-        return $this->const;
+        return isset($this->const) ? $this->const : 0;
+    }
+
+    public function hasConst()
+    {
+        return isset($this->const);
+    }
+
+    public function clearConst()
+    {
+        unset($this->const);
     }
 
     /**
@@ -146,7 +156,17 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      */
     public function getLt()
     {
-        return $this->lt;
+        return isset($this->lt) ? $this->lt : 0;
+    }
+
+    public function hasLt()
+    {
+        return isset($this->lt);
+    }
+
+    public function clearLt()
+    {
+        unset($this->lt);
     }
 
     /**
@@ -174,7 +194,17 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      */
     public function getLte()
     {
-        return $this->lte;
+        return isset($this->lte) ? $this->lte : 0;
+    }
+
+    public function hasLte()
+    {
+        return isset($this->lte);
+    }
+
+    public function clearLte()
+    {
+        unset($this->lte);
     }
 
     /**
@@ -203,7 +233,17 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      */
     public function getGt()
     {
-        return $this->gt;
+        return isset($this->gt) ? $this->gt : 0;
+    }
+
+    public function hasGt()
+    {
+        return isset($this->gt);
+    }
+
+    public function clearGt()
+    {
+        unset($this->gt);
     }
 
     /**
@@ -233,7 +273,17 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      */
     public function getGte()
     {
-        return $this->gte;
+        return isset($this->gte) ? $this->gte : 0;
+    }
+
+    public function hasGte()
+    {
+        return isset($this->gte);
+    }
+
+    public function clearGte()
+    {
+        unset($this->gte);
     }
 
     /**
@@ -318,7 +368,17 @@ class UInt32Rules extends \Google\Protobuf\Internal\Message
      */
     public function getIgnoreEmpty()
     {
-        return $this->ignore_empty;
+        return isset($this->ignore_empty) ? $this->ignore_empty : false;
+    }
+
+    public function hasIgnoreEmpty()
+    {
+        return isset($this->ignore_empty);
+    }
+
+    public function clearIgnoreEmpty()
+    {
+        unset($this->ignore_empty);
     }
 
     /**
