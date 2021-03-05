@@ -207,7 +207,7 @@ class MapRules extends \Google\Protobuf\Internal\Message
      * Keys specifies the constraints to be applied to each key in the field.
      *
      * Generated from protobuf field <code>.validate.FieldRules keys = 4;</code>
-     * @return \ProtocGenValidate\Validate\FieldRules
+     * @return \ProtocGenValidate\Validate\FieldRules|null
      */
     public function getKeys()
     {
@@ -245,7 +245,7 @@ class MapRules extends \Google\Protobuf\Internal\Message
      * unless skip is specified here.
      *
      * Generated from protobuf field <code>.validate.FieldRules values = 5;</code>
-     * @return \ProtocGenValidate\Validate\FieldRules
+     * @return \ProtocGenValidate\Validate\FieldRules|null
      */
     public function getValues()
     {

@@ -146,7 +146,7 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      * Const specifies that this field must be exactly the specified value
      *
      * Generated from protobuf field <code>.google.protobuf.Duration const = 2;</code>
-     * @return \Google\Protobuf\Duration
+     * @return \Google\Protobuf\Duration|null
      */
     public function getConst()
     {
@@ -183,7 +183,7 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      * exclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Duration lt = 3;</code>
-     * @return \Google\Protobuf\Duration
+     * @return \Google\Protobuf\Duration|null
      */
     public function getLt()
     {
@@ -221,7 +221,7 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      * inclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Duration lte = 4;</code>
-     * @return \Google\Protobuf\Duration
+     * @return \Google\Protobuf\Duration|null
      */
     public function getLte()
     {
@@ -259,7 +259,7 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      * exclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Duration gt = 5;</code>
-     * @return \Google\Protobuf\Duration
+     * @return \Google\Protobuf\Duration|null
      */
     public function getGt()
     {
@@ -297,7 +297,7 @@ class DurationRules extends \Google\Protobuf\Internal\Message
      * inclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Duration gte = 6;</code>
-     * @return \Google\Protobuf\Duration
+     * @return \Google\Protobuf\Duration|null
      */
     public function getGte()
     {

@@ -62,7 +62,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.MessageRules message = 17;</code>
-     * @return \ProtocGenValidate\Validate\MessageRules
+     * @return \ProtocGenValidate\Validate\MessageRules|null
      */
     public function getMessage()
     {
@@ -96,7 +96,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
      * Scalar Field Types
      *
      * Generated from protobuf field <code>.validate.FloatRules float = 1;</code>
-     * @return \ProtocGenValidate\Validate\FloatRules
+     * @return \ProtocGenValidate\Validate\FloatRules|null
      */
     public function getFloat()
     {
@@ -125,7 +125,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.DoubleRules double = 2;</code>
-     * @return \ProtocGenValidate\Validate\DoubleRules
+     * @return \ProtocGenValidate\Validate\DoubleRules|null
      */
     public function getDouble()
     {
@@ -152,7 +152,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.Int32Rules int32 = 3;</code>
-     * @return \ProtocGenValidate\Validate\Int32Rules
+     * @return \ProtocGenValidate\Validate\Int32Rules|null
      */
     public function getInt32()
     {
@@ -179,7 +179,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.Int64Rules int64 = 4;</code>
-     * @return \ProtocGenValidate\Validate\Int64Rules
+     * @return \ProtocGenValidate\Validate\Int64Rules|null
      */
     public function getInt64()
     {
@@ -206,7 +206,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.UInt32Rules uint32 = 5;</code>
-     * @return \ProtocGenValidate\Validate\UInt32Rules
+     * @return \ProtocGenValidate\Validate\UInt32Rules|null
      */
     public function getUint32()
     {
@@ -233,7 +233,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.UInt64Rules uint64 = 6;</code>
-     * @return \ProtocGenValidate\Validate\UInt64Rules
+     * @return \ProtocGenValidate\Validate\UInt64Rules|null
      */
     public function getUint64()
     {
@@ -260,7 +260,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.SInt32Rules sint32 = 7;</code>
-     * @return \ProtocGenValidate\Validate\SInt32Rules
+     * @return \ProtocGenValidate\Validate\SInt32Rules|null
      */
     public function getSint32()
     {
@@ -287,7 +287,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.SInt64Rules sint64 = 8;</code>
-     * @return \ProtocGenValidate\Validate\SInt64Rules
+     * @return \ProtocGenValidate\Validate\SInt64Rules|null
      */
     public function getSint64()
     {
@@ -314,7 +314,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.Fixed32Rules fixed32 = 9;</code>
-     * @return \ProtocGenValidate\Validate\Fixed32Rules
+     * @return \ProtocGenValidate\Validate\Fixed32Rules|null
      */
     public function getFixed32()
     {
@@ -341,7 +341,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.Fixed64Rules fixed64 = 10;</code>
-     * @return \ProtocGenValidate\Validate\Fixed64Rules
+     * @return \ProtocGenValidate\Validate\Fixed64Rules|null
      */
     public function getFixed64()
     {
@@ -368,7 +368,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.SFixed32Rules sfixed32 = 11;</code>
-     * @return \ProtocGenValidate\Validate\SFixed32Rules
+     * @return \ProtocGenValidate\Validate\SFixed32Rules|null
      */
     public function getSfixed32()
     {
@@ -395,7 +395,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.SFixed64Rules sfixed64 = 12;</code>
-     * @return \ProtocGenValidate\Validate\SFixed64Rules
+     * @return \ProtocGenValidate\Validate\SFixed64Rules|null
      */
     public function getSfixed64()
     {
@@ -422,7 +422,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.BoolRules bool = 13;</code>
-     * @return \ProtocGenValidate\Validate\BoolRules
+     * @return \ProtocGenValidate\Validate\BoolRules|null
      */
     public function getBool()
     {
@@ -449,7 +449,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.StringRules string = 14;</code>
-     * @return \ProtocGenValidate\Validate\StringRules
+     * @return \ProtocGenValidate\Validate\StringRules|null
      */
     public function getString()
     {
@@ -476,7 +476,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.BytesRules bytes = 15;</code>
-     * @return \ProtocGenValidate\Validate\BytesRules
+     * @return \ProtocGenValidate\Validate\BytesRules|null
      */
     public function getBytes()
     {
@@ -505,7 +505,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
      * Complex Field Types
      *
      * Generated from protobuf field <code>.validate.EnumRules enum = 16;</code>
-     * @return \ProtocGenValidate\Validate\EnumRules
+     * @return \ProtocGenValidate\Validate\EnumRules|null
      */
     public function getEnum()
     {
@@ -534,7 +534,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.RepeatedRules repeated = 18;</code>
-     * @return \ProtocGenValidate\Validate\RepeatedRules
+     * @return \ProtocGenValidate\Validate\RepeatedRules|null
      */
     public function getRepeated()
     {
@@ -561,7 +561,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.MapRules map = 19;</code>
-     * @return \ProtocGenValidate\Validate\MapRules
+     * @return \ProtocGenValidate\Validate\MapRules|null
      */
     public function getMap()
     {
@@ -590,7 +590,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
      * Well-Known Field Types
      *
      * Generated from protobuf field <code>.validate.AnyRules any = 20;</code>
-     * @return \ProtocGenValidate\Validate\AnyRules
+     * @return \ProtocGenValidate\Validate\AnyRules|null
      */
     public function getAny()
     {
@@ -619,7 +619,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.DurationRules duration = 21;</code>
-     * @return \ProtocGenValidate\Validate\DurationRules
+     * @return \ProtocGenValidate\Validate\DurationRules|null
      */
     public function getDuration()
     {
@@ -646,7 +646,7 @@ class FieldRules extends \Google\Protobuf\Internal\Message
 
     /**
      * Generated from protobuf field <code>.validate.TimestampRules timestamp = 22;</code>
-     * @return \ProtocGenValidate\Validate\TimestampRules
+     * @return \ProtocGenValidate\Validate\TimestampRules|null
      */
     public function getTimestamp()
     {

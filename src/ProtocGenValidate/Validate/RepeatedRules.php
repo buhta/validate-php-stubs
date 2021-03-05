@@ -205,7 +205,7 @@ class RepeatedRules extends \Google\Protobuf\Internal\Message
      * unless skip is specified here.
      *
      * Generated from protobuf field <code>.validate.FieldRules items = 4;</code>
-     * @return \ProtocGenValidate\Validate\FieldRules
+     * @return \ProtocGenValidate\Validate\FieldRules|null
      */
     public function getItems()
     {

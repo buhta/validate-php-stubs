@@ -158,7 +158,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      * Const specifies that this field must be exactly the specified value
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp const = 2;</code>
-     * @return \Google\Protobuf\Timestamp
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getConst()
     {
@@ -195,7 +195,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      * exclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp lt = 3;</code>
-     * @return \Google\Protobuf\Timestamp
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getLt()
     {
@@ -233,7 +233,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      * inclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp lte = 4;</code>
-     * @return \Google\Protobuf\Timestamp
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getLte()
     {
@@ -271,7 +271,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      * exclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp gt = 5;</code>
-     * @return \Google\Protobuf\Timestamp
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getGt()
     {
@@ -309,7 +309,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      * inclusive
      *
      * Generated from protobuf field <code>.google.protobuf.Timestamp gte = 6;</code>
-     * @return \Google\Protobuf\Timestamp
+     * @return \Google\Protobuf\Timestamp|null
      */
     public function getGte()
     {
@@ -424,7 +424,7 @@ class TimestampRules extends \Google\Protobuf\Internal\Message
      * GtNow rules.
      *
      * Generated from protobuf field <code>.google.protobuf.Duration within = 9;</code>
-     * @return \Google\Protobuf\Duration
+     * @return \Google\Protobuf\Duration|null
      */
     public function getWithin()
     {
